@@ -1,13 +1,147 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  margin: 0;
+  background: #86b6f5;
+  color: rgb(0, 0, 0);
+  padding: 2% 0 2% 3%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+
+form {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  width: 30%;
+  margin: 2% 35% 0 35%;
+  padding: 1% 0 0 1%;
+}
+
+textarea {
+  display: block;
+  max-width: 99%;
+  min-width: 99%;
+  min-height: 15vh;
+  height: auto;
+  border: 0;
+  padding: 3% 0 0 1%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: large;
+  outline: none;
+  resize: none;
+}
+
+input {
+  outline: none;
+  border: 0;
+  padding: 1% 0 0 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: larger;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  float: right;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.add {
+  margin-top: -5%;
+  width: 50px;
+  height: 50px;
+}
+
+.add:hover {
+  background: rgb(4, 254, 4);
+  color: #fff;
+}
+
+.delete:hover {
+  color: #fff;
+  background: rgb(253, 21, 21);
+}
+
+.delete {
+  width: 40px;
+  height: 40px;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.box {
+  float: left;
+  margin: 1% 2% 4% 2%;
+  width: 13.5%;
+  padding: 0% 1% 1% 1%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  white-space: pre-line;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+
+footer {
+  font-size: larger;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 43.5%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 912px) {
+  /* Styles for devices with maximum width of 768px or lower */
+  form {
+    width: 80%;
+    margin: 2% 10% 0 10%;
+  }
+  .container {
+    margin-left: 9%;
+  }
+  .box {
+    width: 40%;
+  }
+  
+  footer {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for devices with maximum width of 480px or lower */
+  form {
+    width: 90%;
+    margin: 2% 5% 0 5%;
+  }
+  .container {
+    margin-left: 9%;
+  }F
+  .box {
+    width: 80%;
+  }
+  
+  footer {
+    margin-left: 20%;
+  }
 }
