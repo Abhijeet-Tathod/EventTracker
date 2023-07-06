@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EventTracker/static/css/main.fd571f22.css",
+    "main.js": "/EventTracker/static/js/main.788e656f.js",
+    "index.html": "/EventTracker/index.html",
+    "main.fd571f22.css.map": "/EventTracker/static/css/main.fd571f22.css.map",
+    "main.788e656f.js.map": "/EventTracker/static/js/main.788e656f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd571f22.css",
+    "static/js/main.788e656f.js"
+  ]
+}
