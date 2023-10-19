@@ -3,21 +3,23 @@ import AddIcon from "@mui/icons-material/Add";
 import TaskList from "./taskList.jsx";
 
 const Note = () => {
-  const [hide, setHide] = useState(true);
+  const [hide, setHide] = useState(true);   
   const expand = () => {
     setHide(false);
   };
 
-  const [info, setInfo] = useState({
+  const [info, setInfo] = useState({       // information storage
     title: "",
     task: ``,
   });
-  const inputTask = (event) => {
+
+  // Handle input change function 
+  const inputTask = (event) => {          
     const name = event.target.name;
     const value = event.target.value;
 
   
-    setInfo((prev) => {
+    setInfo((prev) => {       
       return {
         ...prev,
         [name]: value,
@@ -26,6 +28,8 @@ const Note = () => {
   };
 
   const [list, setList] = useState([]);
+
+  // Add Task Function
   const addTask = (event) => {
     event.preventDefault();
     if(info.task===""){           
@@ -41,6 +45,8 @@ const Note = () => {
     });
   };
 
+
+  // Add Delete Function
   const delTask = (id) => {
     setList((tasks) => {
       return tasks.filter((arrElem, index) => {
