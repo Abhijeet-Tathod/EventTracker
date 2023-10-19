@@ -1,11 +1,12 @@
 body {
   margin: 0;
+  background-color: #161620;
 }
 
 h1 {
   margin: 0;
-  background: #86b6f5;
-  color: rgb(0, 0, 0);
+  background: #010407;
+  color: white;
   padding: 2% 0 2% 3%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: lighter;
@@ -17,7 +18,10 @@ form {
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   width: 30%;
   margin: 2% 35% 0 35%;
-  padding: 1% 0 0 1%;
+  /* padding: 1% 0 0 1%; */
+  background-color: #161620;
+  border: solid 1px wheat;
+  border-radius: 5px;
 }
 
 textarea {
@@ -33,6 +37,13 @@ textarea {
   font-size: large;
   outline: none;
   resize: none;
+  background-color: #010407;
+  color: white;
+  
+}
+textarea::placeholder{
+  color:white;
+  
 }
 
 input {
@@ -42,8 +53,16 @@ input {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: larger;
+  background-color: #010407;
+  width: 98%;
+  color: white;
+  border-bottom: solid wheat 1px;
+  padding-bottom: 6px;
 }
 
+input::placeholder{
+  color:white;
+}
 button {
   border: none;
   border-radius: 50%;
@@ -86,6 +105,11 @@ button {
   padding: 0% 1% 1% 1%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+    background-color: #010407;
+    border: solid wheat 1px;
+    color: white;
+    border-radius: 5px;
 }
 
 h2 {
