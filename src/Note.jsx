@@ -15,6 +15,8 @@ const Note = () => {
   const inputTask = (event) => {
     const name = event.target.name;
     const value = event.target.value;
+
+  
     setInfo((prev) => {
       return {
         ...prev,
@@ -26,6 +28,9 @@ const Note = () => {
   const [list, setList] = useState([]);
   const addTask = (event) => {
     event.preventDefault();
+    if(info.task===""){           
+      return;
+    }
     setHide(true);
     setList((oldInfo) => {
       return [...oldInfo, info];
@@ -43,7 +48,7 @@ const Note = () => {
       });
     });
   };
-  
+
   return (
     <>
       <form>
